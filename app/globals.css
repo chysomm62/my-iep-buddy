@@ -2,4 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+button {
+  @apply py-3 px-7 font-medium text-base rounded-[10px] flex items-center justify-center;
+}
 
+.btn-text {
+  @apply text-blue-1;
+}
+
+.btn-contained {
+  @apply bg-blue-1 text-white;
+}
+
+.btn-outlined {
+  @apply border border-blue-1  text-blue-1;
+}
+
+.header-border {
+  @apply w-28 h-1 mx-auto bg-blue-1;
+}
