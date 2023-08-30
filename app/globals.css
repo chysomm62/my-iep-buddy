@@ -19,5 +19,13 @@ button {
 }
 
 .header-border {
-  @apply w-28 h-1 mx-auto bg-blue-1;
+  @apply w-28 h-1 mx-auto bg-blue-1 my-3;
+}
+
+h2 {
+  @apply text-[40px] leading-tight font-semibold;
+}
+
+h3 {
+  @apply font-medium text-3xl;
 }
