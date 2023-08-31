@@ -32,6 +32,7 @@ const config: Config = {
         danger: "#CD190C",
         pink: {
           1: "#FE6EA3",
+          2: "#FFDBE8",
         },
         blue: {
           1: "#43A4F5",

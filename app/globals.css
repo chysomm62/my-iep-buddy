@@ -29,3 +29,7 @@ h2 {
 h3 {
   @apply font-medium text-3xl;
 }
+
+h4 {
+  @apply font-semibold text-xl;
+}

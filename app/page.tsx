@@ -3,6 +3,7 @@ import Hero from "./components/Onboarding/Hero";
 import Offer from "./components/Onboarding/Offer";
 import OnBoardingHeader from "./components/Onboarding/OnboardingHeader";
 import GoalsAndObjectives from "./components/Onboarding/GoalsAndObjectives";
+import FAQs from "./components/Onboarding/FAQs";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Offer />
       <GoalsAndObjectives />
       <PresentLevels />
+      <FAQs />
     </main>
   );
 }

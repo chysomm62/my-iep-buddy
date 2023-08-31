@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import OfferImage from "@/public/images/offer_image.png";
 
 const Offer = () => {
