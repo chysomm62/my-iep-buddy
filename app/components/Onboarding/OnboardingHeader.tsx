@@ -20,7 +20,7 @@ const OnBoardingHeader = () => {
   };
 
   return (
-    <div className="shadow-1 bg-white">
+    <div className="bg-white">
       <nav className="max-w-screen-xl mx-auto flex justify-between items-center pl-0 pr-5 h-20">
         <Link href="/">
           <Image src={Logo} alt="My IEP Buddy logo" />

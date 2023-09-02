@@ -46,10 +46,12 @@ const config: Config = {
         },
         grey: {
           1: "#FFF6F9",
+          2:'#EAEAEA'
         },
       },
       boxShadow: {
         default: "0px 64px 64px -48px rgba(15, 15, 15, 0.1)",
+        1: "0px 12px 30px 0px #0000001A",
       },
     },
   },
