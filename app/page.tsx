@@ -5,6 +5,7 @@ import OnBoardingHeader from "./components/Onboarding/OnboardingHeader";
 import GoalsAndObjectives from "./components/Onboarding/GoalsAndObjectives";
 import FAQs from "./components/Onboarding/FAQs";
 import GetStarted from "./components/Onboarding/GetStarted";
+import OnboardingFooter from "./components/Onboarding/OnboardingFooter";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <PresentLevels />
       <FAQs />
       <GetStarted />
+      <OnboardingFooter />
     </main>
   );
 }

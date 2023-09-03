@@ -46,7 +46,8 @@ const config: Config = {
         },
         grey: {
           1: "#FFF6F9",
-          2:'#EAEAEA'
+          2: "#EAEAEA",
+          3: "#4D4D4D",
         },
       },
       boxShadow: {
