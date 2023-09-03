@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-grey-1;
+}
+
 button {
   @apply py-3 px-7 font-medium text-base rounded-[10px] flex items-center justify-center;
+}
+
+button:hover {
+  @apply brightness-90 transition;
 }
 
 .btn-text {
@@ -16,6 +28,10 @@ button {
 
 .btn-outlined {
   @apply border border-blue-1  text-blue-1;
+}
+
+.btn-plain {
+  @apply px-2;
 }
 
 .header-border {

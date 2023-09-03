@@ -19,7 +19,9 @@ const SubMenuTabs: FC<SubMenuTabsProps> = ({
           <Button
             action={() => setCurrentTab(tabs.indexOf(tab))}
             className={
-              tab === currentTab ? "text-black-1 transition" : "text-black-2"
+              tab === currentTab
+                ? "text-black-1 transition btn-plain whitespace-nowrap"
+                : "text-black-2 btn-plain whitespace-nowrap"
             }
           >
             {tab}
