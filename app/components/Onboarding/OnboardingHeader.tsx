@@ -54,7 +54,7 @@ const OnBoardingHeader = () => {
           <div className="flex flex-col space-y-3 lg:flex-row lg:space-y-0 lg:items-center">
             <>
               <Link
-                href="/login"
+                href="/auth/login"
                 onClick={toggleMenu}
                 className="font-medium text-blue-1 text-center lg:mr-6 rounded-[10px] border border-blue-1 py-[10px] px-7 "
               >

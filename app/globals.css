@@ -49,3 +49,23 @@ h3 {
 h4 {
   @apply font-semibold text-xl;
 }
+
+.form-input,
+.form-textarea,
+.form-select,
+.form-multiselect {
+  @apply w-full rounded-md border border-grey-4 bg-white px-4 py-2 text-sm font-normal text-grey-5 !outline-none focus:border-blue-1 focus:ring-transparent;
+}
+
+.form-input-lg,
+.form-textarea-lg,
+.form-select-lg,
+.form-multiselect-lg {
+  @apply py-2.5 text-base;
+}
+.form-input-sm,
+.form-textarea-sm,
+.form-select-sm,
+.form-multiselect-sm {
+  @apply py-1.5 text-xs;
+}

@@ -48,6 +48,8 @@ const config: Config = {
           1: "#FFF6F9",
           2: "#EAEAEA",
           3: "#4D4D4D",
+          4: "#DBDBDB",
+          5: "#5D7183",
         },
       },
       boxShadow: {
