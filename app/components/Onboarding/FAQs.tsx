@@ -2,13 +2,13 @@ import { faqs } from "@/lib/variables/faqs";
 
 const FAQs = () => {
   return (
-    <section className="px-5 py-20 text-black-1 max-w-screen-xl mx-auto  bg-grey-1">
+    <section className="px-5 py-8 md:py-20 text-black-1 max-w-screen-xl mx-auto  bg-grey-1">
       <div className="header-border"></div>
       <h2 className="uppercase text-center">
         Frequently Asked <span className="text-blue-1">Questions</span>
       </h2>
 
-      <div className="mt-4 lg:mt-6 flex flex-wrap fold:grid-cols-1 grid-cols-2 lg:grid-cols-3 items-start justify-center">
+      <div className="mt-4 lg:mt-6 flex flex-wrap gap-3 md:gap-0 items-start justify-center">
         {faqs.map((faq) => (
           <div
             key={faq.title}

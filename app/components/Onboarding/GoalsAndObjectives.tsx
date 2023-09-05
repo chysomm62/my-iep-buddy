@@ -3,9 +3,9 @@ import GoalsImage from "@/public/images/goals_image.png";
 
 const GoalsAndObjectives = () => {
   return (
-    <section className="px-5 py-20 text-black-1 max-w-screen-xl mx-auto  bg-grey-1">
+    <section className="px-5 py-8 md:py-20 text-black-1 max-w-screen-xl mx-auto  bg-grey-1">
       <div className="md:flex md:justify-between md:items-center py-6 gap-5">
-        <div className="flex-1 md:flex items-center justify-start">
+        <div className="flex-1 md:flex items-center justify-start py-4">
           <Image src={GoalsImage} alt="woman hitting the target" />
         </div>
         <div className="flex-1">

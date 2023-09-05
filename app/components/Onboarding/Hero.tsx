@@ -12,9 +12,9 @@ const Hero = () => {
   };
 
   return (
-    <section className="px-5 py-20 text-black-1 md:flex max-w-screen-xl mx-auto md:justify-between md:items-center bg-grey-1">
+    <section className="px-5 py-12 md:py-20 text-black-1 md:flex max-w-screen-xl mx-auto md:justify-between md:items-center bg-grey-1">
       <div className="mb-20 md:mb-2 md:max-w-lg">
-        <h1 className="text-6xl font-bold mb-8 md:text-4xl lg:text-5xl lg:leading-tight lg:tracking-tight">
+        <h1 className="text-4xl font-bold mb-8 md:text-5xl lg:text-6xl lg:leading-tight lg:tracking-tight">
           <span className="text-pink-1">Never struggle </span> with writing an
           IEP ever again.
         </h1>
@@ -31,7 +31,7 @@ const Hero = () => {
             LEARN MORE{" "}
           </Button>
         </div>
-        <p className="text-blue-1 text-2xl font-semibold mt-7">
+        <p className="text-blue-1 text-xl md:text-2xl font-semibold mt-7">
           All ages. All abilities. One Buddy.
         </p>
       </div>

@@ -3,7 +3,7 @@ import OfferImage from "@/public/images/offer_image.png";
 
 const Offer = () => {
   return (
-    <section className="px-5 py-20 text-black-1 max-w-screen-xl mx-auto  bg-grey-1">
+    <section className="px-5 py-12 md:py-20 text-black-1 max-w-screen-xl mx-auto  bg-grey-1">
       <div className="header-border"></div>
       <h2 className="uppercase text-center">
         What We <span className="text-blue-1">Offer</span>

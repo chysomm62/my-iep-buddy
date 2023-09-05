@@ -26,7 +26,7 @@ const Billings: FC<billingsProps> = ({ billingInfo }) => {
             <MdOutlineLayers />
           </div>
           <p className="text-xl font-semibold">{info.duration}</p>
-          <p className="text-5xl font-semibold">{info.amount}</p>
+          <p className="text-4xl md:text-5xl font-semibold">{info.amount}</p>
           <p className="text-base font-normal text-black-2">{info.method}</p>
           <div className="flex flex-col gap-2">
             {info.benefits.map((benefit) => (

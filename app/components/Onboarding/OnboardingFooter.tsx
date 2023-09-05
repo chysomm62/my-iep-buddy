@@ -15,11 +15,11 @@ const OnboardingFooter: FC = ({}) => {
   ];
 
   return (
-    <footer className="max-w-screen-xl mx-auto text-white font-book bg-blue-3  px-5 overflow-x-hidden">
-      <div className=" py-12 md:py-16">
-        <div className="grid grid-cols-1 gap-10 md:gap-32 md:grid-cols-2 lg:grid-cols-3 ">
-          <div>
-            <div className="h-24 flex items-center ">
+    <footer className="max-w-screen-xl mx-auto text-white font-book bg-blue-3 py-3  px-5 overflow-x-hidden">
+      <div className=" py-6 md:py-16">
+        <div className="grid grid-cols-1 gap-3 md:gap-32 md:grid-cols-2 lg:grid-cols-3 ">
+          <div className="py-4">
+            <div className="mb-2 md:h-24 flex items-center ">
               <Link href="/">
                 <Image src={Logo} alt="My Iep Buddy logo" />
               </Link>
@@ -29,9 +29,9 @@ const OnboardingFooter: FC = ({}) => {
             </p>
           </div>
 
-          <div>
-            <div className="h-24 flex items-center ">
-              <h4 className="text-black-1 mb-4 font-medium text-xl md:text-2xl ">
+          <div className="py-4">
+            <div className="md:h-24 flex items-center ">
+              <h4 className="text-black-1 mb-2 md:mb-4 font-medium text-xl md:text-2xl ">
                 Quick Links
               </h4>
             </div>
@@ -47,9 +47,9 @@ const OnboardingFooter: FC = ({}) => {
             </ul>
           </div>
 
-          <div>
-            <div className="h-24 flex items-center">
-              <h4 className="text-black-1 mb-4 font-medium text-xl md:text-2xl  ">
+          <div className="py-4">
+            <div className="md:h-24 flex items-center">
+              <h4 className="text-black-1 mb-2 md:mb-4 font-medium text-xl md:text-2xl  ">
                 Contact us
               </h4>
             </div>
@@ -62,7 +62,7 @@ const OnboardingFooter: FC = ({}) => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-between">
+      <div className="flex items-start md:items-center justify-between flex-col-reverse md:flex-row">
         <div>
           <p className="text-grey-3 font-light">Copyright © 2023 MyIEP Buddy</p>
         </div>

@@ -23,7 +23,7 @@ const GetStarted = () => {
   };
 
   return (
-    <section className="px-5 py-20 text-black-1 max-w-screen-xl mx-auto  bg-grey-1">
+    <section className="px-5 py-8 md:py-20 text-black-1 max-w-screen-xl mx-auto  bg-grey-1">
       <div className="header-border"></div>
       <h2 className="uppercase text-center">
         Ready To Get <span className="text-blue-1">Started?</span>

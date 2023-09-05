@@ -28,7 +28,7 @@ const SubMenuTabs: FC<SubMenuTabsProps> = ({
           </Button>
         </div>
       ))}{" "}
-      <div className="bg-pink-2 text-pink-1 px-2 text-sm font-medium">
+      <div className="bg-pink-2 text-pink-1 px-2 text-xs md:text-sm font-medium">
         Save 20%
       </div>
     </div>
