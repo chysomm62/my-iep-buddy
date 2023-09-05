@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
@@ -11,11 +12,10 @@ import GeneratorImage from "@/public/images/generator_image.png";
 const AuthComponent = () => {
   const router = useRouter();
   const currentPage = usePathname().split("/", 3)[2];
+  const [showPassword, setShowPassword] = useState(false);
 
   const isRegister = currentPage.toLowerCase() === "register";
   const isLogin = currentPage.toLowerCase() === "login";
-
-  console.log(isRegister, isLogin);
 
   const submitForm = (e: any) => {
     e.preventDefault();
@@ -24,8 +24,8 @@ const AuthComponent = () => {
   return (
     <div>
       <div className="flex min-h-screen items-center justify-between  max-w-screen-xl mx-auto md:p-5 ">
-        <div className="flex-1">
-          <div className="m-6 sm:w-[420px]">
+        <div className="flex-1 p-4">
+          <div className="my-6 sm:w-[420px] mx-auto lg:mx-6">
             <Link href="/">
               <Image src={Logo} alt="My IEP Buddy logo" />
             </Link>
@@ -36,7 +36,7 @@ const AuthComponent = () => {
                 </span>{" "}
                 MyIEP Buddy
               </h2>
-              <form className="space-y-7" onSubmit={submitForm}>
+              <form className="space-y-7 mt-2 md:mt-5" onSubmit={submitForm}>
                 {isRegister && (
                   <div>
                     <input
@@ -55,22 +55,42 @@ const AuthComponent = () => {
                     placeholder="Email*"
                   />
                 </div>
-                <div>
+                <div className="relative">
                   <input
                     id="password"
-                    type="password"
-                    className="form-input"
+                    type={showPassword ? "text" : "password"}
+                    className="form-input "
                     placeholder="Password*"
                   />
+                  <div
+                    onClick={() => setShowPassword(!showPassword)}
+                    className="absolute right-4 top-2 text-grey-5 cursor-pointer"
+                  >
+                    {!showPassword ? (
+                      <BsEye size={20} />
+                    ) : (
+                      <BsEyeSlash size={20} />
+                    )}
+                  </div>
                 </div>
                 {isRegister && (
-                  <div>
+                  <div className="relative">
                     <input
                       id="confirm_password"
-                      type="password"
+                      type={showPassword ? "text" : "password"}
                       className="form-input"
                       placeholder="Confirm Password*"
                     />
+                    <div
+                      onClick={() => setShowPassword(!showPassword)}
+                      className="absolute right-4 top-2 text-grey-5 cursor-pointer"
+                    >
+                      {!showPassword ? (
+                        <BsEye size={20} />
+                      ) : (
+                        <BsEyeSlash size={20} />
+                      )}
+                    </div>
                   </div>
                 )}
                 {isRegister && (
@@ -143,7 +163,7 @@ const AuthComponent = () => {
             </div>
           </div>
         </div>
-        <div className="flex-1 md:flex items-center justify-end">
+        <div className="flex-1 lg:flex items-center justify-end hidden">
           <Image
             src={GeneratorImage}
             alt="man and woman with laptop and tablet"
