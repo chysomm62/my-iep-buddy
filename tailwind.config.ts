@@ -36,6 +36,7 @@ const config: Config = {
         },
         blue: {
           1: "#43A4F5",
+          2: "#101828",
         },
         green: {
           1: "#01C087",
@@ -50,6 +51,9 @@ const config: Config = {
           3: "#4D4D4D",
           4: "#DBDBDB",
           5: "#5D7183",
+          6: "#344054",
+          7: "#F2F4F7",
+          8: "#475467",
         },
       },
       boxShadow: {

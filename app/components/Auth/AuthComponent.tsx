@@ -23,8 +23,8 @@ const AuthComponent = () => {
   };
   return (
     <div>
-      <div className="flex min-h-screen items-center justify-between  max-w-screen-xl mx-auto md:p-5 ">
-        <div className="flex-1 p-4">
+      <div className="flex min-h-screen items-stretch justify-between  max-w-screen-xl mx-auto">
+        <div className="flex-1 p-4 md:p-5 flex items-center justify-center">
           <div className="my-6 sm:w-[420px] mx-auto lg:mx-6">
             <Link href="/">
               <Image src={Logo} alt="My IEP Buddy logo" />
@@ -163,7 +163,7 @@ const AuthComponent = () => {
             </div>
           </div>
         </div>
-        <div className="flex-1 lg:flex items-center justify-end hidden">
+        <div className="flex-1 lg:flex items-center justify-end hidden bg-[#EEF9FF]">
           <Image
             src={GeneratorImage}
             alt="man and woman with laptop and tablet"
