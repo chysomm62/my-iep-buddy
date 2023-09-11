@@ -83,8 +83,8 @@ const Drawer: FC<DrawerProps> = ({ isOpen, toggleMenu }) => {
     <div
       className={
         isOpen
-          ? "fixed top-0 left-0 bottom-0 w-72 h-screen lg:static z-10 p-5 flex justify-between flex-col items-start gap-5 text-white"
-          : "w-72  h-[calc(100vh-24px)] fixed top-0 left-0 right-0 bottom-0 lg:static translate-x-screen lg:translate-x-0 p-5 flex justify-between flex-col items-start text-white"
+          ? "fixed top-0 left-0 bottom-0 w-72 h-screen lg:static p-5 flex justify-between flex-col items-start gap-5 text-white bg-blue-2 z-20"
+          : "w-72  h-[calc(100vh-24px)] fixed top-0 left-0 right-0 bottom-0 lg:static translate-x-screen lg:translate-x-0 p-5 flex justify-between flex-col items-start text-white bg-blue-2"
       }
     >
       <div>
@@ -92,25 +92,24 @@ const Drawer: FC<DrawerProps> = ({ isOpen, toggleMenu }) => {
           <Link href="/">
             <Image src={Logo} alt="My-Iep-Buddy logo" />
           </Link>
-          <div className="z-10 lg:hidden cursor-pointer" onClick={toggleMenu}>
-            <FaBars fontSize="25px" />
-          </div>
         </div>
-        {Tabs.map((tab, index) => (
-          <Link href={tab.link} key={`${tab.id}-${index}`}>
-            <div
-              className={
-                basePath === tab.id
-                  ? "flex items-center justify-start px-4 py-3 cursor-pointer gap-1 text-sm hover:bg-blue-1/10 bg-grey-6 text-white font-semibold  rounded-md whitespace-nowrap"
-                  : "flex items-center justify-start py-3 cursor-pointer gap-1 text-sm hover:bg-blue-1/10 font-medium text-grey-7 rounded-md whitespace-nowrap"
-              }
-              onClick={toggleMenu}
-            >
-              <div className="w-5">{tab.icon}</div>
-              {tab.title}
-            </div>
-          </Link>
-        ))}
+        <div className="mt-4 lg:mt-7">
+          {Tabs.map((tab, index) => (
+            <Link href={tab.link} key={`${tab.id}-${index}`}>
+              <div
+                className={
+                  basePath === tab.id
+                    ? "flex items-center justify-start px-4 py-3 cursor-pointer gap-1 text-sm hover:bg-blue-1/10 bg-grey-6 text-white font-semibold  rounded-md whitespace-nowrap"
+                    : "flex items-center justify-start py-3 cursor-pointer gap-1 text-sm hover:bg-blue-1/10 font-medium text-grey-7 rounded-md whitespace-nowrap"
+                }
+                onClick={toggleMenu}
+              >
+                <div className="w-5">{tab.icon}</div>
+                {tab.title}
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
       <div className="py-4 w-full">
         <div>
@@ -131,13 +130,15 @@ const Drawer: FC<DrawerProps> = ({ isOpen, toggleMenu }) => {
           ))}
         </div>
         <div className="w-full border-t border-grey-8 py-2 mt-3"></div>
-        <div className="flex items-start justify-between">
+        <div className="flex items-start justify-between cursor-pointer">
           <div className="flex items-center gap-2">
             <Image src={avatar} alt="User avatar" />
 
             <div>
               <p className="text-sm font-semibold">Olivia Rhye</p>
-              <p className="text-sm font-normal">olivia@example.com</p>
+              <p className="text-sm font-normal text-grey-7">
+                olivia@example.com
+              </p>
             </div>
           </div>
           <FaBook />

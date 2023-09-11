@@ -10,10 +10,13 @@ const DashboardLayout = ({ children }: { children: ReactNode }) => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="bg-blue-2 flex items-stretch max-w-[100%] overflow-x-hidden font-book py-3">
-      <Drawer isOpen={isOpen} toggleMenu={toggleMenu} />
-      <div className="p-2 md:p-10 w-full md:pr-32 bg-white rounded-s-[40px]">
-        {children}
+    <div className="bg-blue-2 ">
+      <DashboardHeader toggleMenu={toggleMenu} />
+      <div className="flex items-stretch max-w-[100%] overflow-x-hidden font-book py-3">
+        <Drawer isOpen={isOpen} toggleMenu={toggleMenu} />
+        <div className="p-4 md:p-8 w-full bg-white rounded-s-[40px]">
+          {children}
+        </div>
       </div>
     </div>
   );
