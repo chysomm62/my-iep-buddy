@@ -1,17 +1,15 @@
-import React from "react";
-
 const DashboardHome = () => {
   return (
     <section>
-      <header className="px-3 md:px-5 rounded-xl bg-black-2 shadow-2 text-white pt-10 pb-12 md:pb-16">
+      <header className="px-3 md:px-5 rounded-xl bg-black-2 shadow-2 text-white pt-7 pb-10 md:pb-14">
         <h2 className="mb-5">Hello James!</h2>
         <p>You can find your saved information below.</p>
       </header>
-      <article className="p-4 md:p-6 bg-yellow-1/20 rounded-2xl">
+      <article className="p-4  bg-yellow-1/20 rounded-2xl my-6">
         <span className="px-4 py-1 rounded-[38px] text-xs font-normal text-yellow-2 bg-yellow-3">
           Disclaimer
         </span>
-        <p className="text-grey-9 text-sm font-normal my-6">
+        <p className="text-grey-9 text-sm font-normal mt-3">
           Teachers should modify as needed. MyIEP Buddy is intended to serve as
           a supportive tool and source of inspiration for special education
           teachers creating Individualized Education Programs. While we strive
