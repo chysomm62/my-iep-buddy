@@ -1,7 +1,9 @@
+import StudentsTable from "./table";
+
 const DashboardHome = () => {
   return (
     <section>
-      <header className="px-3 md:px-5 rounded-xl bg-black-2 shadow-2 text-white pt-7 pb-10 md:pb-14">
+      <header className="px-3 md:px-5 rounded-xl bg-black-3/50 shadow-2 text-white pt-7 pb-10 md:pb-14">
         <h2 className="mb-5">Hello James!</h2>
         <p>You can find your saved information below.</p>
       </header>
@@ -22,6 +24,7 @@ const DashboardHome = () => {
           creating IEPs.
         </p>
       </article>
+      <StudentsTable />
     </section>
   );
 };

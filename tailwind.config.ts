@@ -44,6 +44,7 @@ const config: Config = {
         black: {
           1: "#333333",
           2: "#696969",
+          3: "#000000",
         },
         grey: {
           1: "#FFF6F9",
