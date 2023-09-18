@@ -1,6 +1,5 @@
 import "regenerator-runtime/runtime";
 import "./globals.css";
-import "core-js/stable";
 
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";

@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Logo from "@/public/images/logo.png";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
-import { BsXLg } from "react-icons/bs";
+import { RiTwitterLine } from "react-icons/ri";
 
 const OnboardingFooter: FC = ({}) => {
   const footerLinks1 = [
@@ -75,7 +75,7 @@ const OnboardingFooter: FC = ({}) => {
             <FaFacebookF className="text-grey-3 text-xs" />
           </a>
           <a href="" target="_blank" rel="noopener noreferrer">
-            <BsXLg className="text-grey-3 text-xs" />
+            <RiTwitterLine className="text-grey-3 text-xs" />
           </a>
         </div>
       </div>

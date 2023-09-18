@@ -1,44 +1,50 @@
-import { FaBars, FaBook } from "react-icons/fa";
+import { FaBook } from "react-icons/fa";
+import { MdLogout } from "react-icons/md";
+import { HiOutlineChartSquareBar, HiOutlineSupport } from "react-icons/hi";
+import { PiHandHeart, PiNotepad } from "react-icons/pi";
+import { CiGrid32 } from "react-icons/ci";
+import { TbArrowCurveRight } from "react-icons/tb";
 import Link from "next/link";
 import Logo from "@/public/images/dashboard_logo.png";
 import avatar from "@/public/images/Avatar.png";
 import Image from "next/image";
 import { FC, MouseEventHandler } from "react";
 import { usePathname } from "next/navigation";
+import { FiSettings } from "react-icons/fi";
 
 const Tabs = [
   {
     title: "Dashboard",
     id: "dashboard",
-    icon: <FaBook />,
+    icon: <HiOutlineChartSquareBar />,
     link: "/dashboard",
     submenu: null,
   },
   {
     title: "Goals and Objectives Genarator",
     id: "goals-and-objectives",
-    icon: <FaBook />,
+    icon: <CiGrid32 />,
     link: "/dashboard/goals-and-objectives",
     submenu: null,
   },
   {
     title: "Accommodations Generator",
     id: "accommodations",
-    icon: <FaBook />,
+    icon: <PiHandHeart />,
     link: "/dashboard/accommodations",
     submenu: null,
   },
   {
     title: "Present Levels Generator",
     id: "present-levels",
-    icon: <FaBook />,
+    icon: <TbArrowCurveRight />,
     link: "/dashboard/present-levels",
     submenu: null,
   },
   {
     title: "Progress Monitoring Ideas",
     id: "progress-monitoring",
-    icon: <FaBook />,
+    icon: <PiNotepad />,
     link: "/dashboard/progress-monitoring",
     submenu: null,
   },
@@ -48,14 +54,14 @@ const Settings = [
   {
     title: "Support",
     id: "support",
-    icon: <FaBook />,
+    icon: <HiOutlineSupport />,
     link: "/dashboard/support",
     submenu: null,
   },
   {
     title: "Settings",
     id: "settings",
-    icon: <FaBook />,
+    icon: <FiSettings />,
     link: "/dashboard/settings",
     submenu: null,
   },
@@ -141,7 +147,7 @@ const Drawer: FC<DrawerProps> = ({ isOpen, toggleMenu }) => {
               </p>
             </div>
           </div>
-          <FaBook />
+          <MdLogout />
         </div>
       </div>
     </div>
