@@ -48,14 +48,9 @@ export const SimpleTable: FC<TableProps> = ({ Data, Columns }) => {
       >
         <thead className="border-b border-grey-8">
           {headerGroups.map((headerGroup) => (
-            <tr
-              key={headerGroup}
-              {...headerGroup.getHeaderGroupProps()}
-              className="bg-white"
-            >
+            <tr {...headerGroup.getHeaderGroupProps()} className="bg-white">
               {headerGroup.headers.map((column) => (
                 <th
-                  key={column}
                   {...column.getHeaderProps(column.getSortByToggleProps())}
                   scope="col"
                   className="px-3 py-5 border-r border-grey-7 last-of-type:border-r-0 font-book text-sm"
@@ -82,14 +77,12 @@ export const SimpleTable: FC<TableProps> = ({ Data, Columns }) => {
             prepareRow(row);
             return (
               <tr
-                key={row}
                 {...row.getRowProps()}
                 className="bg-white border-b  border-grey-8"
               >
                 {row.cells.map((cell) => {
                   return (
                     <td
-                      key={cell}
                       {...cell.getCellProps()}
                       className="px-3 py-4 border-r border-grey-7 last-of-type:border-r-0 whitespace-nowrap text-sm font-light"
                     >

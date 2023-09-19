@@ -1,4 +1,3 @@
-import { FaBook } from "react-icons/fa";
 import { MdLogout } from "react-icons/md";
 import { HiOutlineChartSquareBar, HiOutlineSupport } from "react-icons/hi";
 import { PiHandHeart, PiNotepad } from "react-icons/pi";
@@ -83,7 +82,6 @@ const Drawer: FC<DrawerProps> = ({ isOpen, toggleMenu }) => {
     }
   } catch (error) {}
 
-  console.log(basePath);
 
   return (
     <div

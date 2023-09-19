@@ -1,16 +1,21 @@
+import { HiOutlineDotsVertical } from "react-icons/hi";
 import StudentsTable from "./table";
 
 const DashboardHome = () => {
   return (
     <section>
-      <header className="px-3 md:px-5 rounded-xl bg-black-3/50 shadow-2 text-white pt-7 pb-10 md:pb-14">
+      <header className="px-3 md:px-5 rounded-xl bg-black-3/50 shadow-2 relative text-white pt-7 pb-10 md:pb-14">
         <h2 className="mb-5">Hello James!</h2>
         <p>You can find your saved information below.</p>
+        <div className="absolute right-4 top-4 text-white">
+          <HiOutlineDotsVertical />
+        </div>
       </header>
       <article className="p-4  bg-yellow-1/20 rounded-2xl my-6">
         <span className="px-4 py-1 rounded-[38px] text-xs font-normal text-yellow-2 bg-yellow-3">
           Disclaimer
         </span>
+
         <p className="text-grey-9 text-sm font-normal mt-3">
           Teachers should modify as needed. MyIEP Buddy is intended to serve as
           a supportive tool and source of inspiration for special education

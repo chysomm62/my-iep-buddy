@@ -14,7 +14,7 @@ const DashboardLayout = ({ children }: { children: ReactNode }) => {
       <DashboardHeader toggleMenu={toggleMenu} />
       <div className="flex items-stretch max-w-[100%] overflow-x-hidden font-book py-3">
         <Drawer isOpen={isOpen} toggleMenu={toggleMenu} />
-        <div className="p-4 md:p-8 w-full bg-white rounded-s-[40px]">
+        <div className="p-4 lg:p-8 px-4 lg:px-0 w-full bg-white lg:rounded-s-[40px] rounded-e-lg">
           {children}
         </div>
       </div>

@@ -5,9 +5,6 @@ import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 import Logo from "@/public/images/dashboard_logo.png";
 import { usePathname } from "next/navigation";
-import User from "@/public/images/logo.png";
-import { MdArrowDropDown } from "react-icons/md";
-import { FaBell } from "react-icons/fa";
 import { FC, MouseEventHandler, useState } from "react";
 
 interface HeaderProps {
